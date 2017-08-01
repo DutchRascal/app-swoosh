@@ -90,10 +90,6 @@
                             <constraint firstItem="59Q-MP-j2W" firstAttribute="top" secondItem="j7u-Xh-Kpj" secondAttribute="bottom" id="sIf-Jr-xIl"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="bgImg" destination="5Ar-km-Hn2" id="f5i-Gu-69e"/>
-                        <outlet property="swoosh" destination="t3v-sh-dcD" id="9Ph-yu-izj"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
