@@ -124,7 +124,7 @@
                                             <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="onMensTapped:" destination="Vby-Tl-eTX" eventType="touchUpInside" id="9TF-8T-eWW"/>
+                                            <action selector="categortPressed:" destination="Vby-Tl-eTX" eventType="touchUpInside" id="gGU-Hn-5h6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Se-bV-uQR" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
@@ -138,7 +138,7 @@
                                             <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="onWomensTapped:" destination="Vby-Tl-eTX" eventType="touchUpInside" id="ATa-01-noX"/>
+                                            <action selector="categortPressed:" destination="Vby-Tl-eTX" eventType="touchUpInside" id="p8e-5H-zcP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egs-Sh-ZUv" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
@@ -152,7 +152,7 @@
                                             <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="onCoedTapped:" destination="Vby-Tl-eTX" eventType="touchUpInside" id="qMu-2K-frD"/>
+                                            <action selector="categortPressed:" destination="Vby-Tl-eTX" eventType="touchUpInside" id="YKH-34-GaC"/>
                                         </connections>
                                     </button>
                                 </subviews>

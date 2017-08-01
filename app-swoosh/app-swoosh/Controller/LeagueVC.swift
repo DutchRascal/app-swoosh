@@ -12,13 +12,19 @@ class LeagueVC: UIViewController
 {
     
     var player: Player!
-
+    
     @IBOutlet weak var nextBtn: UIButton!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         player = Player()
+        nextBtn.backgroundColor = UIColor.gray
+    }
+    
+    @IBAction func categortPressed(_ sender: UIButton)
+    {
+        selectLeague(leagueType: sender.currentTitle!.lowercased(), sendingBtn: sender)
     }
     
     @IBAction func onNextTapped(_ sender: UIButton)
@@ -26,24 +32,14 @@ class LeagueVC: UIViewController
         performSegue(withIdentifier: "skillVCSegue", sender: self)
     }
     
-    @IBAction func onMensTapped(_ sender: UIButton)
+    func selectLeague(leagueType: String, sendingBtn: UIButton)
     {
-        selectLeague(leagueType: "mens")
-    }
-    @IBAction func onWomensTapped(_ sender: UIButton)
-    {
-        selectLeague(leagueType: "womens")
-    }
-    
-    @IBAction func onCoedTapped(_ sender: UIButton)
-    {
-        selectLeague(leagueType: "coed")
-    }
-    
-    func selectLeague(leagueType: String)
-    {
-        player.desiredLeague = leagueType
+        let updatedLeagueType = leagueType.replacingOccurrences(of: "-", with: "")
+        player.desiredLeague = updatedLeagueType
+        sendingBtn.backgroundColor = UIColor.gray
         nextBtn.isEnabled = true
+        nextBtn.backgroundColor = UIColor.init(red: 49/255, green: 49/255, blue: 49/255, alpha: 1)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
